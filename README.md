@@ -59,7 +59,7 @@ DeviceProcessEvents
 
 ### 3. Searched the `DeviceProcessEvents` Table for TOR Browser Execution
 
-Searched for any indication that user "employee1139" actually opened the TOR browser. There was evidence that they did open it at `Apr 5, 2025 3:24:27 PM`. There were several other instances of `firefox.exe` (TOR) as well as `tor.exe` spawned afterwards.
+Searched for any indication that user `"employee1139"` actually opened the TOR browser. There was evidence that they did open it at `Apr 5, 2025 3:24:27 PM`. There were several other instances of `firefox.exe` (TOR) as well as `tor.exe` spawned afterwards.
 
 **Query used to locate events:**
 
@@ -100,14 +100,14 @@ DeviceNetworkEvents
 ### 1. File Download - TOR Installer
 
 - **Timestamp:** `Apr 5, 2025 3:24:27 PM`
-- **Event:** The user "employee" downloaded a file named `tor-browser-windows-x86_64-portable-14.0.1.exe` to the Downloads folder.
+- **Event:** The user "employee1139" downloaded a file named `tor-browser-windows-x86_64-portable-14.0.1.exe` to the Downloads folder.
 - **Action:** File download detected.
 - **File Path:** `C:\Users\employee\Downloads\tor-browser-windows-x86_64-portable-14.0.1.exe`
 
 ### 2. Process Execution - TOR Browser Installation
 
 - **Timestamp:** `Apr 5, 2025 3:24:58 PM`
-- **Event:** The user "employee" executed the file `tor-browser-windows-x86_64-portable-14.0.1.exe` in silent mode, initiating a background installation of the TOR Browser.
+- **Event:** The user "employee1139" executed the file `tor-browser-windows-x86_64-portable-14.0.1.exe` in silent mode, initiating a background installation of the TOR Browser.
 - **Action:** Process creation detected.
 - **Command:** `tor-browser-windows-x86_64-portable-14.0.1.exe /S`
 - **File Path:** `C:\Users\employee\Downloads\tor-browser-windows-x86_64-portable-14.0.1.exe`
@@ -115,14 +115,14 @@ DeviceNetworkEvents
 ### 3. Process Execution - TOR Browser Launch
 
 - **Timestamp:** `Apr 5, 2025 3:25:01 PM`
-- **Event:** User "employee" opened the TOR browser. Subsequent processes associated with TOR browser, such as `firefox.exe` and `tor.exe`, were also created, indicating that the browser launched successfully.
+- **Event:** User "employee1139" opened the TOR browser. Subsequent processes associated with TOR browser, such as `firefox.exe` and `tor.exe`, were also created, indicating that the browser launched successfully.
 - **Action:** Process creation of TOR browser-related executables detected.
 - **File Path:** `C:\Users\employee\Desktop\Tor Browser\Browser\TorBrowser\Tor\tor.exe`
 
 ### 4. Network Connection - TOR Network
 
 - **Timestamp:** `Apr 5, 2025 3:25:10 PM`
-- **Event:** A network connection to IP `163.172.13.237` on port `9001` by user "employee" was established using `tor.exe`, confirming TOR browser network activity.
+- **Event:** A network connection to IP `163.172.13.237` on port `9001` by user "employee1139" was established using `tor.exe`, confirming TOR browser network activity.
 - **Action:** Connection success.
 - **Process:** `tor.exe`
 - **File Path:** `c:\users\employee\desktop\tor browser\browser\torbrowser\tor\tor.exe`
@@ -130,7 +130,7 @@ DeviceNetworkEvents
 ### 5. Additional Network Connections - TOR Browser Activity
 
 - **Timestamps:**
-  - `Apr 5, 2025 3:25:01 PM` - Connected to `94.16.105.206` on port `443`.
+  - `Apr 5, 2025 3:25:01 PM` - Connected to `103.251.165.125` on port `443`.
   - `Apr 5, 2025 3:25:01 PM` - Local connection to `127.0.0.1` on port `9150`.
 - **Event:** Additional TOR network connections were established, indicating ongoing activity by user "employee1139" through the TOR browser.
 - **Action:** Multiple successful connections detected.
@@ -138,7 +138,7 @@ DeviceNetworkEvents
 ### 6. File Creation - TOR Shopping List
 
 - **Timestamp:** `Apr 5, 2025 3:29:19 PM`
-- **Event:** The user "employee" created a file named `tor-shopping-list.txt` on the desktop, potentially indicating a list or notes related to their TOR browser activities.
+- **Event:** The user "employee1139" created a file named `tor-shopping-list.txt` on the desktop, potentially indicating a list or notes related to their TOR browser activities.
 - **Action:** File creation detected.
 - **File Path:** `C:\Users\employee\Desktop\tor-shopping-list.txt`
 
